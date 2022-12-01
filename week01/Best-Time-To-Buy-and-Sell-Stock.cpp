@@ -1,4 +1,4 @@
-# Approach 1 
+// Approach 1
 class Solution
 {
 public:
@@ -19,7 +19,7 @@ public:
     }
 };
 
-# Approach 2  
+// Approach 2
 class Solution
 {
 public:
@@ -44,7 +44,7 @@ public:
     }
 };
 
-# Approach 3
+// Approach 3
 class Solution
 {
 public:
@@ -63,7 +63,7 @@ public:
     }
 };
 
-# Approach 4
+// Approach 4
 class Solution
 {
 public:
