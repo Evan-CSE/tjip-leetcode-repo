@@ -1,5 +1,5 @@
 // Approach 1
-// Complexity: n*n(log(log(n)))
+// Complexity: n*n(log(n))
 class Solution
 {
 public:
