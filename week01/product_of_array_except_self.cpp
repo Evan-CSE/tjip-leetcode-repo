@@ -1,4 +1,6 @@
 // Approach 1 (Suffix & Prefix Technique)
+// TC: O(n)
+// MC: O(n+n)
 class Solution
 {
 public:
@@ -24,6 +26,8 @@ public:
 };
 
 // Approach 2 (No Suffix or Prefix Array)
+// TC: O(n)
+// MC: O(n)
 class Solution
 {
 public:

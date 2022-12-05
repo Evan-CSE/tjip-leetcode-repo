@@ -1,3 +1,5 @@
+// TC: O(n*n)
+// MC: O(1)
 class Solution
 {
 public:

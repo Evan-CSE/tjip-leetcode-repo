@@ -1,5 +1,6 @@
 // Approach 1
-// Complexity: n*n*n(log(n))
+// Time Complexity: n*n*n(log(n))
+// MC: O(log(n)+n)
 class Solution
 {
 public:

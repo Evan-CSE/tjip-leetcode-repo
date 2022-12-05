@@ -1,4 +1,6 @@
 // Approach 1
+// TC: O(n)
+// MC: O(n)
 class Solution
 {
 public:
@@ -25,6 +27,8 @@ public:
 };
 
 // Approach 2
+// TC: O(n*n)
+// MC: O(n*n)
 class Solution
 {
 public:

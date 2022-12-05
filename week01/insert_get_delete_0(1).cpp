@@ -1,3 +1,5 @@
+// TC:O(1)
+// MC: O(2n)
 class RandomizedSet
 {
 public:

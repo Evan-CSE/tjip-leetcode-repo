@@ -1,5 +1,6 @@
 // Approach 1
-// Complexity: O(n*n)
+// TC: O(n*n)
+// MC: O(2*n)
 class Solution
 {
 public:

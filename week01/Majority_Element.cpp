@@ -1,4 +1,6 @@
 // Approach 1
+// TC: nlog(n)
+// MC: O(1)
 class Solution
 {
 public:
@@ -11,6 +13,7 @@ public:
 };
 
 // Approach 2
+// TC: O(n)
 class Solution
 {
 public:

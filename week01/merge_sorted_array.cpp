@@ -1,4 +1,6 @@
 // Approach 1
+// TC: O(n)
+// MC: O(2n)
 class Solution
 {
 public:
