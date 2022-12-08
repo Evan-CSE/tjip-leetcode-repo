@@ -1,26 +1,4 @@
 // Approach 1:
-//  TC: O(n)
-//  MC: O(1)
-class Solution
-{
-public:
-    bool isAnagram(string s, string t)
-    {
-        int l = s.size(), x = 0, y = 0;
-        if (l != t.size())
-            return false;
-        for (int i = 0; i < l; i++)
-        {
-            x ^= s[i];
-            y ^= t[i];
-        }
-        if (x == y)
-            return true;
-        return false;
-    }
-};
-
-// Approach 2:
 //  TC: O(nlogn)
 // MC: O(n)
 class Solution
@@ -34,7 +12,7 @@ public:
     }
 };
 
-// Approach 3:
+// Approach 2:
 //  TC: O(n)
 //  MC: O(n)
 class Solution
