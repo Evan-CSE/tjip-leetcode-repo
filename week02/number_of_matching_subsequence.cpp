@@ -7,9 +7,9 @@ public:
         int lastIndex = -1;
         for (auto x : str)
         {
-            // vector<int>temp = charIndex[x-'a'];
-            auto it = upper_bound(charIndex[x - 'a'].begin(), charIndex[x - 'a'].end(), lastIndex);
-            if (it == charIndex[x - 'a'].end())
+            vector<int> &temp = charIndex[x - 'a'];
+            auto it = upper_bound(temp.begin(), temp.end(), lastIndex);
+            if (it == temp.end())
                 return false;
             lastIndex = *it;
         }
