@@ -1,4 +1,5 @@
-// TC: O()
+// TC: O(10^4*100) = O(n*n)
+// MC:O(10^4*100) = O(n*n) for using vector of type vector of string
 class Solution
 {
 public:
