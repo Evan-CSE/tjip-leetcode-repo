@@ -1,3 +1,5 @@
+// TC: O(length(s)*log(n))
+//  MC: O(n)
 class Solution
 {
 public:
