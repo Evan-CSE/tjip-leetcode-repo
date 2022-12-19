@@ -1,4 +1,4 @@
-// TC:O(s.size())
+// TC:O(n) where n denotes size of the given string
 // MC:O(1)
 class Solution
 {
