@@ -3,14 +3,14 @@
 class Solution
 {
 public:
-    bool isValid(char opn_bracket, char closing_bracket)
+    bool isValid(char &opn_bracket, char &closing_bracket)
     {
         return (opn_bracket == '(' && closing_bracket == ')') || (opn_bracket == '{' && closing_bracket == '}') || (opn_bracket == '[' && closing_bracket == ']');
     }
-    bool isValid(string s)
+    bool isValid(string &s)
     {
         stack<char> stk;
-        for (auto x : s)
+        for (auto &x : s)
         {
             if (x == '(' || x == '{' || x == '[')
             {

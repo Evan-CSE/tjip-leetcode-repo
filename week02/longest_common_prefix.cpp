@@ -7,10 +7,10 @@ public:
     string longestCommonPrefix(vector<string> &strs)
     {
         unordered_map<string, int> scoreOfString;
-        for (auto x : strs)
+        for (auto &x : strs)
         {
             string tmp = "";
-            for (auto s : x)
+            for (auto &s : x)
             {
                 tmp += s;
                 scoreOfString[tmp]++;
