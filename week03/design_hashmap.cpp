@@ -6,7 +6,7 @@ class MyHashMap
 public:
     const static int MAXSIZE = 103880;
     const static int PRIME1 = 91, PRIME2 = 331, PRIME3 = 103879;
-    list<int> Map[MAXSIZE];
+    list<pair<int, int>> Map[MAXSIZE] = {};
     MyHashMap()
     {
     }
@@ -17,23 +17,37 @@ public:
     void put(int key, int value)
     {
         key = get_hash(key);
-        if (!Map[key].empty())
-            Map[key].clear();
-        Map[key].insert(Map[key].begin(), value);
+        for (auto it = Map[key].begin(); it != Map[key].end(); it++)
+        {
+            if ((*it).first == key)
+            {
+                (*it).second = value;
+                return;
+            }
+        }
+        Map[key].insert(Map[key].begin(), {key, value});
     }
 
     int get(int key)
     {
         key = get_hash(key);
-        if (Map[key].empty())
-            return -1;
-        return *Map[key].begin();
+        for (auto it = Map[key].begin(); it != Map[key].end(); it++)
+        {
+            if ((*it).first == key)
+                return (*it).second;
+        }
+        return -1;
     }
 
     void remove(int key)
     {
         key = get_hash(key);
-        if (!Map[key].empty())
-            Map[key].clear();
+        for (auto it = Map[key].begin(); it != Map[key].end(); it++)
+        {
+            if ((*it).first == key)
+            {
+                it = Map[key].erase(it);
+            }
+        }
     }
 };
