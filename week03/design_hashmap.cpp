@@ -6,7 +6,7 @@ class MyHashMap
 public:
     const static int MAXSIZE = 103880;
     const static int PRIME1 = 91, PRIME2 = 331, PRIME3 = 103879;
-    vector<int> Map[MAXSIZE];
+    list<int> Map[MAXSIZE];
     MyHashMap()
     {
     }
@@ -19,7 +19,7 @@ public:
         key = get_hash(key);
         if (!Map[key].empty())
             Map[key].clear();
-        Map[key].push_back(value);
+        Map[key].insert(Map[key].begin(), value);
     }
 
     int get(int key)
@@ -27,7 +27,7 @@ public:
         key = get_hash(key);
         if (Map[key].empty())
             return -1;
-        return Map[key][0];
+        return *Map[key].begin();
     }
 
     void remove(int key)
