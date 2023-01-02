@@ -5,14 +5,14 @@ class Solution
 public:
     bool isIsomorphic(string s, string t)
     {
-        unordered_map<char, char> rplc_with;
+        vector<char> rplc_with(300, 0);
         int parent[400];
         for (int i = 0; i < 400; i++)
             parent[i] = -1;
         int indx = 0;
         for (auto &x : s)
         {
-            if (rplc_with.count(x) == 0)
+            if (rplc_with[x] == 0)
             {
                 if (parent[t[indx]] != -1 && parent[t[indx]] != x)
                     return false;
