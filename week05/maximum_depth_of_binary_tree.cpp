@@ -1,6 +1,7 @@
 /**
  * TC: O(n)
  * MC: O(n)
+ * where n is number of nodes in the tree
  */
 class Solution
 {

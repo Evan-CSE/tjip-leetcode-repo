@@ -1,6 +1,7 @@
 /**
  * TC : O(n)
  * MC: O(n)
+ * where n is the number of nodes in the BST
  */
 class Solution
 {
