@@ -1,7 +1,7 @@
 /**
  *  TC: O(n)
- *  MC: O(h)
- * where n is the number of nodes of the tree and h is the height of the bst
+ *  MC: O(n)
+ * where n is the number of nodes of the tree
  */
 
 class Solution
