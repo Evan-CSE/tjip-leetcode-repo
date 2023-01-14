@@ -1,4 +1,5 @@
 /*
+    This problem needs to be updated to O(Nlog(k)) using divide & conqueer
     TC: O(k*n)
     where,
          k is the length of the vector of lists

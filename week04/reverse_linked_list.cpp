@@ -6,9 +6,10 @@
 class Solution
 {
 public:
+    const static int DUMMY_VALUE = 0;
     ListNode *reverseList(ListNode *cur)
     {
-        ListNode *nxt = new ListNode(0, NULL);
+        ListNode *nxt = new ListNode(DUMMY_VALUE, NULL);
         ListNode *prev = NULL;
         while (cur)
         {

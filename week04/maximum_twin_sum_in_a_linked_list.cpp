@@ -30,7 +30,7 @@ public:
             fast = fast->next->next;
             slow = slow->next;
         }
-        // Now slow is in the middle of the list
+        // Now 'slow' is in the middle of the list
         // now reverese the list from this point
         auto prev = reverseList(slow->next);
         slow = head;
